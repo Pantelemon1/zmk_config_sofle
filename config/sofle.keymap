@@ -37,6 +37,15 @@
         };
     };
 
+    macros {
+        test_makros: test_makros {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp H &kp E &kp L &kp L &kp O &kp SPACE &kp W &kp O &kp R &kp L &kp D &kp EXCL &kp EXCL &kp EXCL>;
+            label = "TEST_MAKROS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
