@@ -129,7 +129,7 @@
 &trans  &trans  &trans          &trans          &trans           &trans                    &trans  &trans  &trans  &trans  &trans  &ext_power EP_OFF
 &trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &kp A   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
