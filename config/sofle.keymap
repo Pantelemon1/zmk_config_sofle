@@ -158,4 +158,13 @@
                 <&inc_dec_kp PG_UP PG_DN>;
         };
     };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        TEST {
+            if-layers = <2>;
+            then-layer = <3>;
+        };
+    };
 };
