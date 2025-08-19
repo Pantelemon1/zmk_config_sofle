@@ -46,13 +46,6 @@
             bindings = <&none &kp H &kp E &kp L &kp L &kp O &kp SPACE &kp W &kp O &kp R &kp L &kp D &kp EXCL &kp EXCL &kp EXCL>;
             label = "TEST_MAKROS";
         };
-
-        new_macro_Andr: new_macro_Andr {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp COMMA &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp EQUAL &kp RPAR &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE>;
-            label = "NEW_MACRO_ANDR";
-        };
     };
 
     combos {
@@ -62,6 +55,11 @@
             bindings = <&mo 3>;
             key-positions = <53 56>;
             layers = <3>;
+        };
+
+        ru_en {
+            bindings = <&kp LS(LEFT_ALT)>;
+            key-positions = <27 28>;
         };
     };
 
