@@ -126,11 +126,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                    &trans  &trans  &trans  &trans  &trans  &ext_power EP_OFF
-&trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans                    &ext_power EP_ON  &trans  &ext_power EP_TOG  &trans  &trans  &ext_power EP_OFF
+&trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans                    &trans            &trans  &trans             &trans  &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &trans            &trans  &trans             &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans            &trans  &trans             &trans  &trans  &trans
+                &trans          &trans          &trans           &trans  &trans    &trans  &trans            &trans  &trans             &trans
             >;
         };
 
