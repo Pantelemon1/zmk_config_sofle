@@ -115,11 +115,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &trans          &trans        &trans          &trans     &trans           &trans
-&ext_power EP_ON   &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &bt BT_CLR_ALL                    &kp PG_UP       &trans        &trans          &trans     &kp PRINTSCREEN  &trans
-&ext_power EP_TOG  &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &out OUT_TOG                      &kp LEFT        &kp DOWN      &kp UP          &kp RIGHT  &kp DELETE       &kp BACKSPACE
-&ext_power EP_OFF  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans          &trans    &trans  &mmv MOVE_DOWN  &msc SCRL_UP  &msc SCRL_DOWN  &trans     &trans           &trans
-                                 &trans        &trans        &none         &trans          &none     &mo 4   &trans          &trans        &trans          &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &trans          &trans        &trans          &trans     &trans           &trans
+&none       &none         &kp PSCRN     &kp K_CMENU   &trans        &bt BT_CLR_ALL                    &kp PG_UP       &trans        &trans          &trans     &kp PRINTSCREEN  &trans
+&none       &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &out OUT_TOG                      &kp LEFT        &kp DOWN      &kp UP          &kp RIGHT  &kp DELETE       &kp BACKSPACE
+&none       &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans          &trans    &trans  &mmv MOVE_DOWN  &msc SCRL_UP  &msc SCRL_DOWN  &trans     &trans           &trans
+                          &trans        &trans        &none         &trans          &none     &mo 4   &trans          &trans        &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -127,11 +127,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                    &ext_power EP_ON  &trans  &ext_power EP_TOG  &trans  &trans  &ext_power EP_OFF
-&trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans                    &trans            &trans  &trans             &trans  &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &trans            &trans  &trans             &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans            &trans  &trans             &trans  &trans  &trans
-                &trans          &trans          &trans           &trans  &trans    &trans  &trans            &trans  &trans             &trans
+&trans  &trans  &trans          &trans          &trans           &trans                    &none   &trans  &none   &trans  &trans  &none
+&trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
