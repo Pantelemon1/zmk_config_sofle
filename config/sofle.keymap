@@ -47,6 +47,8 @@
                 <&kp NUMBER_2>,
                 <&kt NUMBER_3>,
                 <&kp NUMBER_4>;
+
+            tapping-term-ms = <175>;
         };
     };
 
