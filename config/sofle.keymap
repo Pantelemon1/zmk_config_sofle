@@ -71,6 +71,7 @@
             bindings = <&mo 3>;
             key-positions = <53 56>;
             layers = <3>;
+            require-prior-idle-ms = <175>;
         };
 
         ru_en {
@@ -91,11 +92,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB     &kp N1  &kp N2            &kp N3        &kp N4            &kp N5                                               &kp N6            &kp N7            &kp N8        &kp N9        &kp N0    &kp BACKSPACE
-&kp GRAVE   &kp Q   &kp W             &kp E         &kp R             &kp T                                                &kp Y             &kp U             &kp I         &kp O         &kp P     &kp LEFT_BRACKET
-&kp ESCAPE  &kp A   &kp S             &kp D         &kp F             &kp G                                                &kp H             &kp J             &kp K         &kp L         &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z   &kp X             &kp C         &kp V             &kp B             &kp C_MUTE             &kp C_MUTE  &kp N             &kp M             &kp COMMA     &kp PERIOD    &kp FSLH  &kp RSHFT
-                    &tap_dance_mo1_3  &kp LEFT_ALT  &kp LEFT_CONTROL  &tap_dance_mo1_3  &HMR LEFT_GUI ENTER    &kp SPACE   &tap_dance_mo2_4  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI
+&kp TAB     &kp N1  &kp N2            &kp N3        &kp N4            &kp N5                                     &kp N6  &kp N7            &kp N8        &kp N9        &kp N0    &kp BACKSPACE
+&kp GRAVE   &kp Q   &kp W             &kp E         &kp R             &kp T                                      &kp Y   &kp U             &kp I         &kp O         &kp P     &kp LEFT_BRACKET
+&kp ESCAPE  &kp A   &kp S             &kp D         &kp F             &kp G                                      &kp H   &kp J             &kp K         &kp L         &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z   &kp X             &kp C         &kp V             &kp B   &kp C_MUTE             &kp C_MUTE  &kp N   &kp M             &kp COMMA     &kp PERIOD    &kp FSLH  &kp RSHFT
+                    &tap_dance_mo1_3  &kp LEFT_ALT  &kp LEFT_CONTROL  &mo 1   &HMR LEFT_GUI ENTER    &kp SPACE   &mo 2   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -134,7 +135,7 @@
 &none       &none         &none         &kp K_CMENU   &trans        &bt BT_CLR_ALL                    &kp PG_UP       &trans        &trans          &trans     &kp PRINTSCREEN  &trans
 &none       &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &none                             &kp LEFT        &kp DOWN      &kp UP          &kp RIGHT  &kp DELETE       &kp BACKSPACE
 &none       &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans          &trans    &trans  &mmv MOVE_DOWN  &msc SCRL_UP  &msc SCRL_DOWN  &trans     &trans           &trans
-                          &trans        &trans        &none         &trans          &none     &mo 4   &trans          &trans        &trans          &trans
+                          &trans        &trans        &trans        &trans          &trans    &mo 4   &trans          &trans        &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
