@@ -124,7 +124,7 @@
 &none  &none       &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none                     &none     &none          &none      &none      &kp PRINTSCREEN  &kp DELETE
 &none  &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                     &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &none            &kp BACKSPACE
 &none  &kp K_UNDO  &kp K_CUT       &kp K_COPY      &kp K_PASTE      &none   &trans    &trans  &none     &kp PAGE_DOWN  &kt PG_UP  &none      &none            &none
-                   &trans          &trans          &trans           &trans  &trans    &mo 3   &trans    &trans         &trans     &trans
+                   &trans          &trans          &trans           &trans  &tog 4    &mo 3   &trans    &trans         &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -146,7 +146,7 @@
 &none  &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK                    &none   &none   &none   &none   &none  &none
 &none  &none  &kp KP_NUMBER_4  &kt KP_NUMBER_5  &kp KP_NUMBER_6  &kt MINUS                       &none   &none   &none   &none   &none  &none
 &none  &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS      &trans    &trans  &none   &none   &none   &none   &none  &none
-              &kp KP_NUMBER_0  &trans           &kt DOT          &trans        &trans    &none   &trans  &trans  &trans  &trans
+              &kp KP_NUMBER_0  &trans           &kt DOT          &trans        &tog 4    &none   &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
