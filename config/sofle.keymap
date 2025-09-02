@@ -40,7 +40,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MO1_3";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 3>;
+            bindings = <&mo 1>, <&mo 0>;
 
             tapping-term-ms = <175>;
         };
@@ -49,7 +49,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MO2_4";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&mo 4>;
+            bindings = <&mo 2>, <&mo 3>;
 
             tapping-term-ms = <175>;
         };
@@ -68,9 +68,8 @@
         compatible = "zmk,combos";
 
         combos_mo3 {
-            bindings = <&mo 3>;
+            bindings = <&mo 0>;
             key-positions = <53 56>;
-            layers = <3>;
             require-prior-idle-ms = <175>;
         };
 
@@ -116,7 +115,7 @@
 &none   &kp N1     &kp N2    &kp N3       &kp N4    &kp N5                       &kp N6     &kp N7    &kp N8         &kp N9     &kp N0    &kp F12
 &trans  &kp EXCL   &kp AT    &kp HASH     &kp DLLR  &kp PRCNT                    &kp CARET  &kp AMPS  &kp LS(KP_N8)  &kp LPAR   &kp RPAR  &kp MINUS
 &none   &kp EQUAL  &kp PIPE  &kp KP_PLUS  &kp LBRC  &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &kp SEMI       &kp COLON  &kp BSLH  &trans
-                   &trans    &trans       &trans    &trans     &mo 3     &trans  &trans     &trans    &trans         &trans
+                   &trans    &trans       &trans    &trans     &mo 0     &trans  &trans     &trans    &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -135,23 +134,13 @@
 &none  &none       &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none                     &none     &none          &none      &none      &kp PRINTSCREEN  &kp DELETE
 &none  &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                     &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &none            &kp BACKSPACE
 &none  &kp K_UNDO  &kp K_CUT       &kp K_COPY      &kp K_PASTE      &none   &trans    &trans  &none     &kp PAGE_DOWN  &kt PG_UP  &none      &none            &none
-                   &trans          &trans          &trans           &trans  &trans    &mo 4   &trans    &trans         &trans     &trans
+                   &trans          &trans          &trans           &trans  &trans    &mo 3   &trans    &trans         &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_3 {
-            bindings = <
-&none   &none   &none           &none           &none            &none                           &none   &trans  &none   &trans  &trans  &none
-&trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &kp NUMBER_3  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans          &trans          &trans           &trans        &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_4 {
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &bt BT_CLR_ALL                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -161,7 +150,21 @@
             >;
         };
 
-        layer_6 {
+        layer_4 {
+            bindings = <
+&none  &none  &none            &none            &none            &kp SLASH                       &none   &none   &none   &none   &none  &none
+&none  &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK                    &none   &none   &none   &none   &none  &none
+&none  &none  &kp KP_NUMBER_4  &kt KP_NUMBER_5  &kp KP_NUMBER_6  &kt MINUS                       &none   &none   &none   &none   &none  &none
+&none  &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS      &trans    &trans  &none   &none   &none   &none   &none  &none
+              &kp KP_NUMBER_0  &trans           &kt DOT          &trans        &trans    &none   &trans  &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        layer_5 {
             bindings = <
 &none  &none  &none   &none   &none   &none                     &none   &none   &none   &none   &none  &none
 &none  &none  &none   &none   &none   &none                     &none   &none   &none   &none   &none  &none
