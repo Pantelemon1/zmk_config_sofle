@@ -112,7 +112,7 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp F1     &kp F2    &kp F3       &kp F4    &kp F5                       &kp F6     &kp F7    &kp F8         &kp F9     &kp F10   &kp F11
+&none   &kp F1     &kp F2    &kp F3       &kp F4    &kp F5                       &kp F6     &kp F7    &kp F8         &kp F9     &kp F10   &kp F11
 &none   &kp N1     &kp N2    &kp N3       &kp N4    &kp N5                       &kp N6     &kp N7    &kp N8         &kp N9     &kp N0    &kp F12
 &trans  &kp EXCL   &kp AT    &kp HASH     &kp DLLR  &kp PRCNT                    &kp CARET  &kp AMPS  &kp LS(KP_N8)  &kp LPAR   &kp RPAR  &kp MINUS
 &none   &kp EQUAL  &kp PIPE  &kp KP_PLUS  &kp LBRC  &kp RBRC   &trans    &trans  &kp LBKT   &kp RBKT  &kp SEMI       &kp COLON  &kp BSLH  &trans
@@ -131,11 +131,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&none  &none       &none      &none       &none        &none                     &none     &none          &none      &none      &none            &none
-&none  &none       &none      &none       &none        &none                     &none     &none          &none      &none      &kp PRINTSCREEN  &kp DELETE
-&none  &none       &none      &none       &none        &none                     &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &none            &kp BACKSPACE
-&none  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &none   &trans    &trans  &none     &kp PAGE_DOWN  &kt PG_UP  &none      &none            &none
-                   &trans     &trans      &trans       &trans  &trans    &mo 4   &trans    &trans         &trans     &trans
+&none  &none       &none           &none           &none            &none                     &none     &none          &none      &none      &none            &none
+&none  &none       &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none                     &none     &none          &none      &none      &kp PRINTSCREEN  &kp DELETE
+&none  &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                     &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &none            &kp BACKSPACE
+&none  &kp K_UNDO  &kp K_CUT       &kp K_COPY      &kp K_PASTE      &none   &trans    &trans  &none     &kp PAGE_DOWN  &kt PG_UP  &none      &none            &none
+                   &trans          &trans          &trans           &trans  &trans    &mo 4   &trans    &trans         &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
